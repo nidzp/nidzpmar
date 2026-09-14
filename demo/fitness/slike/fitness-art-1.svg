@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="t d">
+<title id="t">NIDZP demo ilustracija — Fitness Studio Kinetik</title>
+<desc id="d">Dizajnirana sintetička ilustracija u bojama demo brenda Fitness Studio Kinetik; nije fotografija stvarnog lokala.</desc>
+<defs>
+<linearGradient id="nebo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#101418"/><stop offset="1" stop-color="#4e241f"/></linearGradient>
+<radialGradient id="sunce" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f7c948"/><stop offset=".62" stop-color="#f7c948" stop-opacity=".55"/><stop offset="1" stop-color="#f7c948" stop-opacity="0"/></radialGradient>
+<linearGradient id="polje" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#552d2b"/><stop offset="1" stop-color="#823125"/></linearGradient>
+<filter id="zrno"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#nebo)"/>
+<g fill="#d8dbde" opacity=".10">
+<ellipse cx="210" cy="150" rx="118" ry="30"/>
+<ellipse cx="140" cy="164" rx="70" ry="22"/>
+<ellipse cx="288" cy="166" rx="62" ry="19"/>
+</g>
+<path d="M910,110 q14,-16 28,0 q14,-16 28,0" fill="none" stroke="#d8dbde" stroke-width="4" stroke-linecap="round" opacity="0.5"/><path d="M972,142 q12,-13 24,0 q12,-13 24,0" fill="none" stroke="#d8dbde" stroke-width="4" stroke-linecap="round" opacity="0.38"/><path d="M848,168 q10,-11 20,0 q10,-11 20,0" fill="none" stroke="#d8dbde" stroke-width="4" stroke-linecap="round" opacity="0.26"/>
+<circle cx="860" cy="190" r="230.39999999999998" fill="url(#sunce)"/>
+<circle cx="860" cy="190" r="96" fill="#f7c948" opacity=".92"/>
+<circle cx="190" cy="640" r="330" fill="none" stroke="#d8dbde" stroke-opacity=".08" stroke-width="2"/>
+<path d="M0,596 C230,548 420,622 640,578 S1030,634 1200,584 L1200,900 L0,900 Z" fill="url(#polje)" opacity=".85"/>
+<path d="M0,668 C260,626 470,694 700,650 S1050,706 1200,660 L1200,900 L0,900 Z" fill="#672a22"/>
+<path d="M0,760 C280,724 520,782 760,748 S1080,796 1200,758 L1200,900 L0,900 Z" fill="#913526"/>
+<g fill="none" stroke="#d8dbde" stroke-width="3" opacity=".12">
+<path d="M60,800 Q330,768 620,796 T1180,788"/>
+<path d="M20,844 Q340,812 660,840 T1200,830"/>
+</g>
+<g transform="translate(600,588) rotate(-3) scale(1)">
+    <ellipse cx="0" cy="120" rx="260" ry="24" fill="#d8dbde" opacity=".14"/>
+    <rect x="-152" y="-13" width="304" height="26" rx="13" fill="#d8dbde"/>
+    <rect x="-222" y="-66" width="58" height="132" rx="18" fill="#d8dbde"/>
+    <rect x="-172" y="-84" width="52" height="168" rx="18" fill="#d8dbde"/>
+    <rect x="120" y="-84" width="52" height="168" rx="18" fill="#d8dbde"/>
+    <rect x="164" y="-66" width="58" height="132" rx="18" fill="#d8dbde"/>
+    <path d="M0,-150 Q14,-176 0,-196 Q-14,-216 0,-238" stroke="#d8dbde" stroke-width="9" fill="none" stroke-linecap="round" opacity=".45"/>
+    <path d="M-238,-128 a22,22 0 1 1 34,18" fill="none" stroke="#d8dbde" stroke-width="8" stroke-linecap="round" opacity=".5"/>
+    <path d="M-268,-84 l40,0 M-254,-100 l0,32" stroke="#f7c948" stroke-width="8" stroke-linecap="round" opacity=".85"/></g>
+<rect width="1200" height="900" filter="url(#zrno)"/>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "version": "2026-09-09",
+  "currency": "EUR",
+  "site": {
+    "name": "Sajt",
+    "annual": 600,
+    "renewal": 600,
+    "includes": [
+      "Izrada sajta",
+      "Standardno održavanje",
+      "Popravke bagova"
+    ]
+  },
+  "premium": {
+    "name": "Premium sajt sa Ninom",
+    "annual": 2500,
+    "renewal": 2500,
+    "includes": [
+      "Višestranični premium sajt sa filmskim uvodom",
+      "Nina AI asistentkinja: posebna stranica i pristup iz interfejsa",
+      "Klijentski panel sa pregledom i odobravanjem sadržaja",
+      "Testiranje na mobilnom i desktop pregledu",
+      "Jedan ciklus korekcija u okviru izrade",
+      "Ista cena pri godišnjoj obnovi"
+    ]
+  },
+  "marketing": {
+    "name": "Mesečni marketing",
+    "optional": true,
+    "note": "Zasebna usluga po posebnom dogovoru. Nije automatski deo premium sajta niti bilo kog osnovnog paketa.",
+    "includes": [
+      "Instagram + Facebook za jednu lokaciju",
+      "Jedna kampanja mesečno",
+      "4 originalne statične objave i 4 story adaptacije",
+      "Plan termina i ručno zakazivanje odobrenog sadržaja",
+      "Kratak izveštaj iz stvarnih uvida",
+      "Jedna objedinjena runda korekcija"
+    ]
+  },
+  "scope": "Jedna lokacija, jedan jezik i jedan odobravalac. Nema dodatne obavezne naknade za početnu izradu.",
+  "separate": "Domen, oglasi i dodatna potrošnja dogovaraju se zasebno. Mesečni marketing, fotografisanje, video, svakodnevni DM i moderacija, dodatne mreže, neograničene izmene, upravljanje oglasima i posebne aplikacije nisu uključeni u osnovni obim.",
+  "demo": "Interni NIDZP demo, nije poslata ponuda. Cilj kvaliteta nije obećanje zarade ili dokazana tržišna vrednost."
+}

@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://nidzp-ponuda.netlify.app/api/:path*"
+    }
+  ]
+}

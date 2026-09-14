@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="t d">
+<title id="t">NIDZP demo ilustracija — Auto Centar Voyager</title>
+<desc id="d">Dizajnirana sintetička ilustracija u bojama demo brenda Auto Centar Voyager; nije fotografija stvarnog lokala.</desc>
+<defs>
+<linearGradient id="nebo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f7fa"/><stop offset="1" stop-color="#b4c9d9"/></linearGradient>
+<radialGradient id="sunce" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f28c28"/><stop offset=".62" stop-color="#f28c28" stop-opacity=".55"/><stop offset="1" stop-color="#f28c28" stop-opacity="0"/></radialGradient>
+<linearGradient id="polje" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bccfdc"/><stop offset="1" stop-color="#7fa3bd"/></linearGradient>
+<filter id="zrno"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#nebo)"/>
+<g fill="#313c47" opacity=".10">
+<ellipse cx="1010" cy="192" rx="118" ry="30"/>
+<ellipse cx="940" cy="206" rx="70" ry="22"/>
+<ellipse cx="1088" cy="208" rx="62" ry="19"/>
+</g>
+<path d="M910,110 q14,-16 28,0 q14,-16 28,0" fill="none" stroke="#313c47" stroke-width="4" stroke-linecap="round" opacity="0.5"/><path d="M972,142 q12,-13 24,0 q12,-13 24,0" fill="none" stroke="#313c47" stroke-width="4" stroke-linecap="round" opacity="0.38"/><path d="M848,168 q10,-11 20,0 q10,-11 20,0" fill="none" stroke="#313c47" stroke-width="4" stroke-linecap="round" opacity="0.26"/>
+<circle cx="300" cy="168" r="196.79999999999998" fill="url(#sunce)"/>
+<circle cx="300" cy="168" r="82" fill="#f28c28" opacity=".92"/>
+<circle cx="1010" cy="640" r="330" fill="none" stroke="#313c47" stroke-opacity=".08" stroke-width="2"/>
+<path d="M0,574 C250,620 460,552 660,596 S1020,548 1200,600 L1200,900 L0,900 Z" fill="url(#polje)" opacity=".85"/>
+<path d="M0,652 C240,610 480,672 720,632 S1060,688 1200,648 L1200,900 L0,900 Z" fill="#9bb7cb"/>
+<path d="M0,752 C300,716 540,776 780,744 S1080,788 1200,754 L1200,900 L0,900 Z" fill="#7099b5"/>
+<g fill="none" stroke="#313c47" stroke-width="3" opacity=".12">
+<path d="M60,800 Q330,768 620,796 T1180,788"/>
+<path d="M20,844 Q340,812 660,840 T1200,830"/>
+</g>
+<g transform="translate(600,588) rotate(2) scale(0.92)">
+    <ellipse cx="0" cy="112" rx="240" ry="26" fill="#313c47" opacity=".14"/>
+    <path d="M-192,44 L-168,42 Q-156,-18 -92,-30 L-38,-32 Q14,-32 50,2 L124,10 Q182,18 188,46 L188,60 Q188,76 166,76 L-166,76 Q-192,76 -192,56 Z" fill="#313c47"/>
+    <path d="M-84,-16 L-44,-18 L-44,6 L-138,12 Q-118,-6 -84,-16 Z" fill="#f4f7fa" opacity=".85"/>
+    <path d="M-24,-18 L30,-16 Q56,-2 72,8 L-24,10 Z" fill="#f4f7fa" opacity=".85"/>
+    <rect x="164" y="26" width="26" height="10" rx="5" fill="#f28c28"/>
+    <rect x="-212" y="26" width="20" height="10" rx="5" fill="#f4f7fa" opacity=".6"/>
+    <circle cx="-108" cy="76" r="36" fill="#313c47"/><circle cx="-108" cy="76" r="15" fill="#f4f7fa"/>
+    <circle cx="112" cy="76" r="36" fill="#313c47"/><circle cx="112" cy="76" r="15" fill="#f4f7fa"/>
+    <path d="M-236,120 L-196,120 M-186,138 L-146,138" stroke="#313c47" stroke-width="7" stroke-linecap="round" opacity=".3"/></g>
+<rect width="1200" height="900" filter="url(#zrno)"/>
+</svg>

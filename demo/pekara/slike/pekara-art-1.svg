@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="t d">
+<title id="t">NIDZP demo ilustracija — Pekara Topola</title>
+<desc id="d">Dizajnirana sintetička ilustracija u bojama demo brenda Pekara Topola; nije fotografija stvarnog lokala.</desc>
+<defs>
+<linearGradient id="nebo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff8ec"/><stop offset="1" stop-color="#efd7b3"/></linearGradient>
+<radialGradient id="sunce" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8a4b2a"/><stop offset=".62" stop-color="#8a4b2a" stop-opacity=".55"/><stop offset="1" stop-color="#8a4b2a" stop-opacity="0"/></radialGradient>
+<linearGradient id="polje" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efdcc0"/><stop offset="1" stop-color="#e1bc83"/></linearGradient>
+<filter id="zrno"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#nebo)"/>
+<g fill="#4e3f2d" opacity=".10">
+<ellipse cx="210" cy="150" rx="118" ry="30"/>
+<ellipse cx="140" cy="164" rx="70" ry="22"/>
+<ellipse cx="288" cy="166" rx="62" ry="19"/>
+</g>
+<path d="M910,110 q14,-16 28,0 q14,-16 28,0" fill="none" stroke="#4e3f2d" stroke-width="4" stroke-linecap="round" opacity="0.5"/><path d="M972,142 q12,-13 24,0 q12,-13 24,0" fill="none" stroke="#4e3f2d" stroke-width="4" stroke-linecap="round" opacity="0.38"/><path d="M848,168 q10,-11 20,0 q10,-11 20,0" fill="none" stroke="#4e3f2d" stroke-width="4" stroke-linecap="round" opacity="0.26"/>
+<circle cx="860" cy="190" r="230.39999999999998" fill="url(#sunce)"/>
+<circle cx="860" cy="190" r="96" fill="#8a4b2a" opacity=".92"/>
+<circle cx="190" cy="640" r="330" fill="none" stroke="#4e3f2d" stroke-opacity=".08" stroke-width="2"/>
+<path d="M0,596 C230,548 420,622 640,578 S1030,634 1200,584 L1200,900 L0,900 Z" fill="url(#polje)" opacity=".85"/>
+<path d="M0,668 C260,626 470,694 700,650 S1050,706 1200,660 L1200,900 L0,900 Z" fill="#e8ca9c"/>
+<path d="M0,760 C280,724 520,782 760,748 S1080,796 1200,758 L1200,900 L0,900 Z" fill="#deb476"/>
+<g fill="none" stroke="#4e3f2d" stroke-width="3" opacity=".12">
+<path d="M60,800 Q330,768 620,796 T1180,788"/>
+<path d="M20,844 Q340,812 660,840 T1200,830"/>
+</g>
+<g transform="translate(600,588) rotate(-3) scale(1)">
+    <ellipse cx="0" cy="128" rx="200" ry="24" fill="#4e3f2d" opacity=".14"/>
+    <path d="M-152,86 Q-152,-58 0,-58 Q152,-58 152,86 Q152,116 122,116 L-122,116 Q-152,116 -152,86 Z" fill="#4e3f2d"/>
+    <path d="M-150,34 Q0,6 150,34" stroke="#fff8ec" stroke-width="7" fill="none" opacity=".5"/>
+    <path d="M-84,-34 Q-52,-2 -46,54" stroke="#fff8ec" stroke-width="12" fill="none" stroke-linecap="round" opacity=".4"/>
+    <path d="M0,-44 L0,52" stroke="#fff8ec" stroke-width="12" fill="none" stroke-linecap="round" opacity=".4"/>
+    <path d="M84,-34 Q52,-2 46,54" stroke="#fff8ec" stroke-width="12" fill="none" stroke-linecap="round" opacity=".4"/>
+    <path d="M-190,-96 q14,-26 -6,-44 q26,2 24,32" fill="none" stroke="#4e3f2d" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+    <path d="M-206,-40 q16,-22 0,-40" fill="none" stroke="#4e3f2d" stroke-width="8" stroke-linecap="round" opacity=".45"/>
+    <circle cx="-196" cy="-118" r="9" fill="#8a4b2a"/>
+    <circle cx="-176" cy="-146" r="9" fill="#8a4b2a" opacity=".7"/>
+    <circle cx="-156" cy="-172" r="9" fill="#8a4b2a" opacity=".45"/></g>
+<rect width="1200" height="900" filter="url(#zrno)"/>
+</svg>
