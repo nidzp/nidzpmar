@@ -396,7 +396,8 @@ body.privacy-open .sticky-contact { opacity: 0; pointer-events: none; }
 
 .sticky-contact {
   position: fixed;
-  right: 1.1rem;
+  left: 1.1rem;
+  right: auto;
   bottom: 1.1rem;
   z-index: 18;
   padding: .75rem 1rem;
