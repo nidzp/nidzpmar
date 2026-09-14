@@ -7,15 +7,15 @@
     },
     {
       "source": "/demo/:slug/paket-1",
-      "destination": "/demo/:slug/index.html"
+      "destination": "/demo/:slug/"
     },
     {
       "source": "/demo/:slug/paket-2",
-      "destination": "/demo/:slug/index.html"
+      "destination": "/demo/:slug/"
     },
     {
       "source": "/demo/:slug/paket-2/nina",
-      "destination": "/demo/:slug/index.html"
+      "destination": "/demo/:slug/"
     },
     {
       "source": "/api/:path*",
