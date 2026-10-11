@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Svih 30 niša uživo: izaberite svoj posao i odmah pogledajte pravi, klikabilan demo sajta. Sajt 600 EUR godišnje, Premium sa Ninom 2.500 EUR godišnje, ista cena pri obnovi.">
+  <meta name="demo-marker" content="NIDZP DEMO">
+  <title>Svih 30 niša — uživo demo · NIDZP</title>
+  <style>
+:root{--paper:#fff;--ink:#141414;--muted:#595959;--soft:#8a8a8a;--line:#e3e3e3;--panel:#f5f5f4;--max:1080px;--brand:#141414;--brand-ink:#ffffff;--accent:#595959;--accent-ink:#ffffff}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.topbar{width:min(var(--max),100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 1.5rem;border-bottom:2px solid var(--accent)}
+.brand{display:inline-flex;align-items:center;font-weight:900;letter-spacing:.12em;text-decoration:none;white-space:nowrap}
+.brand span{display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;margin-right:.55rem;border-radius:50%;background:var(--brand);color:var(--brand-ink)}
+.brand small{color:var(--soft);font-size:.55rem;letter-spacing:.14em;font-weight:700}
+.topbar .tel{font-weight:800;text-decoration:none;white-space:nowrap}
+.topbar .tel:hover{color:var(--accent)}
+main>section{width:min(var(--max),100%);margin:auto;padding:2rem 1.5rem}
+.eyebrow{color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin:0 0 .5rem}
+h1{font-size:clamp(1.9rem,4.5vw,2.9rem);line-height:1.08;margin:.2rem 0 1rem;max-width:24ch}
+h2{font-size:clamp(1.35rem,3vw,1.8rem);margin:0 0 1rem}
+.lede{color:var(--muted);font-size:1.05rem;max-width:54ch;margin:0 0 1.4rem}
+.price-strip{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;align-items:baseline;padding:.9rem 1.1rem;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:.95rem}
+.price-strip strong{font-size:1.04rem}
+.palette{display:flex;height:10px;max-width:340px;border-radius:999px;overflow:hidden;margin-top:1.2rem}
+.p-brand{flex:1;background:var(--brand)}
+.p-accent{flex:1;background:var(--accent)}
+.demo-frame{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+.demo-frame iframe{display:block;width:100%;height:min(72vh,640px);border:0;background:#fff}
+.demo-note{color:var(--soft);font-size:.82rem;margin:.7rem 0 1.2rem}
+.frame-links,.contact-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.button{display:inline-block;padding:.75rem 1.15rem;border-radius:9px;text-decoration:none;font-weight:800;border:1px solid transparent}
+.button.primary{background:var(--accent);color:var(--accent-ink)}
+.button.primary:hover{filter:brightness(.95)}
+.button.ghost{border-color:var(--ink);background:#fff;color:var(--ink)}
+.button.ghost:hover{background:var(--panel)}
+.packs{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.packs article{border:1px solid var(--line);border-radius:12px;padding:1.15rem;background:#fff}
+.packs h3{margin:.1rem 0 .7rem;font-size:1.05rem}
+.packs ul{margin:0;padding-left:1.15rem;color:var(--muted)}
+.packs li{margin:.45rem 0}
+.faq details{border:1px solid var(--line);border-radius:10px;background:#fff;padding:.9rem 1.1rem;margin:.6rem 0}
+.faq summary{font-weight:700;cursor:pointer}
+.faq p{color:var(--muted);margin:.6rem 0 0}
+.kontakt p{color:var(--muted);max-width:56ch}
+.nazad{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1.5rem}
+.nazad a{color:var(--muted);font-weight:700;text-decoration:none;border-bottom:1px solid var(--line)}
+.nazad a:hover{color:var(--ink);border-color:var(--ink)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{display:flex;flex-direction:column;gap:.55rem;border:1px solid var(--line);border-radius:12px;padding:1.05rem;background:#fff}
+.card .palette{margin:0 0 .25rem;max-width:none}
+.card h3{margin:0;font-size:1.02rem;line-height:1.3}
+.card .slogan{color:var(--muted);font-size:.92rem;margin:0;flex:1}
+.card-links{display:flex;justify-content:space-between;gap:.6rem;margin-top:.35rem}
+.card-links a{font-weight:800;font-size:.9rem;text-decoration:none;border-bottom:1px solid var(--ink)}
+.card-links a:hover{color:var(--accent)}
+.cta-end{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+footer{border-top:1px solid var(--line);margin-top:2.2rem;padding:1.4rem 1.5rem;text-align:center;color:var(--muted);font-size:.85rem}
+footer strong{color:var(--ink)}
+@media (max-width:560px){.topbar{padding:.7rem 1rem}main>section{padding:1.5rem 1rem}h1{max-width:none}}
+  </style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/nisa/"><span aria-hidden="true">N</span>NIDZP <small>MARKETING</small></a><a class="tel" href="tel:+381637456770">063 745 6770</a></header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">SOMBOR I OKOLINA · SAJTOVI ZA LOKALNE BIZNISE</p>
+    <h1>Svih 30 niša — uživo demo</h1>
+    <p class="lede">Izaberite svoj posao — odmah pregledate pravi, klikabilan sajt, ne maketu ni sliku. Bez prijave, bez čekanja.</p>
+    <div class="price-strip" aria-label="Cene i obnova">
+      <span><strong>600 EUR</strong> Sajt · godišnje</span>
+      <span><strong>2.500 EUR</strong> Premium sa Ninom · godišnje</span>
+      <span><strong>Ista cena</strong> pri obnovi</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="nise-naslov">
+    <h2 id="nise-naslov">Izaberite nišu</h2>
+    <div class="grid">
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#23314d"></span><span class="p-accent" style="background:#c9a86a"></span></div>
+      <h3>Advokatska kancelarija</h3>
+      <p class="slogan">Prvo jasno pitanje. Zatim sledeći korak.</p>
+      <div class="card-links"><a href="/nisa/advokat/">Niša stranica →</a><a href="/demo/advokat/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#156b8a"></span><span class="p-accent" style="background:#58d5e8"></span></div>
+      <h3>Auto-perionica i detailing</h3>
+      <p class="slogan">Čist rezultat, jasan termin.</p>
+      <div class="card-links"><a href="/nisa/auto-perionica/">Niša stranica →</a><a href="/demo/auto-perionica/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#1f5f8b"></span><span class="p-accent" style="background:#f28c28"></span></div>
+      <h3>Auto-servis i vulkanizer</h3>
+      <p class="slogan">Vaš auto, naš redovni servis</p>
+      <div class="card-links"><a href="/nisa/auto-servis/">Niša stranica →</a><a href="/demo/auto-servis/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#ef5b31"></span><span class="p-accent" style="background:#f4cf48"></span></div>
+      <h3>Burger bar i dostava</h3>
+      <p class="slogan">Veliki ukus. Kratak put do izbora.</p>
+      <div class="card-links"><a href="/nisa/burger-bar/">Niša stranica →</a><a href="/demo/burger-bar/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#9a365d"></span><span class="p-accent" style="background:#f0c1a0"></span></div>
+      <h3>Modni butik</h3>
+      <p class="slogan">Komadi koji nose vaš ritam.</p>
+      <div class="card-links"><a href="/nisa/butik/">Niša stranica →</a><a href="/demo/butik/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#c2578f"></span><span class="p-accent" style="background:#6b9a5b"></span></div>
+      <h3>Cvećara i garden studio</h3>
+      <p class="slogan">Cveće koje govori umesto vas</p>
+      <div class="card-links"><a href="/nisa/cvecara/">Niša stranica →</a><a href="/demo/cvecara/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#d39a00"></span><span class="p-accent" style="background:#2d4f72"></span></div>
+      <h3>Električarske usluge</h3>
+      <p class="slogan">Bez lutanja do pravog majstora.</p>
+      <div class="card-links"><a href="/nisa/elektricar/">Niša stranica →</a><a href="/demo/elektricar/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#e0492f"></span><span class="p-accent" style="background:#f7c948"></span></div>
+      <h3>Fitness studio</h3>
+      <p class="slogan">Pokret koji se nastavlja sutra</p>
+      <div class="card-links"><a href="/nisa/fitness/">Niša stranica →</a><a href="/demo/fitness/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#5a3696"></span><span class="p-accent" style="background:#e9aa5b"></span></div>
+      <h3>Foto i video studio</h3>
+      <p class="slogan">Trenutak dobija svoj kadar.</p>
+      <div class="card-links"><a href="/nisa/fotograf/">Niša stranica →</a><a href="/demo/fotograf/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#b0567a"></span><span class="p-accent" style="background:#d4a05a"></span></div>
+      <h3>Frizerski i beauty studio</h3>
+      <p class="slogan">Vaša najbolja verzija, počinje od šišanja</p>
+      <div class="card-links"><a href="/nisa/frizer/">Niša stranica →</a><a href="/demo/frizer/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#174c66"></span><span class="p-accent" style="background:#e5b567"></span></div>
+      <h3>Hotel i apartmani</h3>
+      <p class="slogan">Boravak koji počinje dobrim planom.</p>
+      <div class="card-links"><a href="/nisa/hotel/">Niša stranica →</a><a href="/demo/hotel/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#3b82c4"></span><span class="p-accent" style="background:#f7c948"></span></div>
+      <h3>Dečja igraonica i rođendan-kuća</h3>
+      <p class="slogan">Gde se rođendani pamte godinama</p>
+      <div class="card-links"><a href="/nisa/igraonica/">Niša stranica →</a><a href="/demo/igraonica/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#6f4e37"></span><span class="p-accent" style="background:#d9a441"></span></div>
+      <h3>Kafić · specialty coffee</h3>
+      <p class="slogan">Zrno po zrno, šolja po šolja</p>
+      <div class="card-links"><a href="/nisa/kafic/">Niša stranica →</a><a href="/demo/kafic/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#1f6b55"></span><span class="p-accent" style="background:#e0a23c"></span></div>
+      <h3>Knjižara i gift shop</h3>
+      <p class="slogan">Ideje koje ostaju.</p>
+      <div class="card-links"><a href="/nisa/knjizara/">Niša stranica →</a><a href="/demo/knjizara/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#8c2633"></span><span class="p-accent" style="background:#d6a15d"></span></div>
+      <h3>Mesara i delikates</h3>
+      <p class="slogan">Od vitrine do jasne porudžbine.</p>
+      <div class="card-links"><a href="/nisa/mesara/">Niša stranica →</a><a href="/demo/mesara/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#7e45c7"></span><span class="p-accent" style="background:#57d0bd"></span></div>
+      <h3>Muzička škola i studio</h3>
+      <p class="slogan">Pronađite svoj tempo.</p>
+      <div class="card-links"><a href="/nisa/muzicka-skola/">Niša stranica →</a><a href="/demo/muzicka-skola/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#7a5230"></span><span class="p-accent" style="background:#8a9a5b"></span></div>
+      <h3>Nameštaj i enterijer</h3>
+      <p class="slogan">Nameštaj koji mera vaš prostor</p>
+      <div class="card-links"><a href="/nisa/namestaj/">Niša stranica →</a><a href="/demo/namestaj/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#286f6c"></span><span class="p-accent" style="background:#dda85e"></span></div>
+      <h3>Agencija za nekretnine</h3>
+      <p class="slogan">Pronađite prostor za sledeće poglavlje.</p>
+      <div class="card-links"><a href="/nisa/nekretnine/">Niša stranica →</a><a href="/demo/nekretnine/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#c98a2d"></span><span class="p-accent" style="background:#8a4b2a"></span></div>
+      <h3>Pekara i poslastičarnica</h3>
+      <p class="slogan">Toplo iz peći od pet ujutru</p>
+      <div class="card-links"><a href="/nisa/pekara/">Niša stranica →</a><a href="/demo/pekara/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#2a9d8f"></span><span class="p-accent" style="background:#f4a261"></span></div>
+      <h3>Pet grooming salon</h3>
+      <p class="slogan">Vaš ljubimac, naš najlepši posao</p>
+      <div class="card-links"><a href="/nisa/pet-grooming/">Niša stranica →</a><a href="/demo/pet-grooming/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#b23a73"></span><span class="p-accent" style="background:#f0b7cf"></span></div>
+      <h3>Poslastičarnica i torte</h3>
+      <p class="slogan">Povod dobija svoj ukus.</p>
+      <div class="card-links"><a href="/nisa/poslasticarnica/">Niša stranica →</a><a href="/demo/poslasticarnica/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#2448a7"></span><span class="p-accent" style="background:#76a8ff"></span></div>
+      <h3>Računovodstvena agencija</h3>
+      <p class="slogan">Brojevi bez magle.</p>
+      <div class="card-links"><a href="/nisa/racunovodstvo/">Niša stranica →</a><a href="/demo/racunovodstvo/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#3049a3"></span><span class="p-accent" style="background:#e7b64d"></span></div>
+      <h3>Rent a car</h3>
+      <p class="slogan">Izaberite put, pa vozilo.</p>
+      <div class="card-links"><a href="/nisa/rent-a-car/">Niša stranica →</a><a href="/demo/rent-a-car/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#e83b2f"></span><span class="p-accent" style="background:#9db36a"></span></div>
+      <h3>Picerija · pasta · dostava</h3>
+      <p class="slogan">Vatra, testo, Sombor.</p>
+      <div class="card-links"><a href="/nisa/restoran/">Niša stranica →</a><a href="/demo/restoran/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#1665d8"></span><span class="p-accent" style="background:#61d7ff"></span></div>
+      <h3>Servis računara i IT podrška</h3>
+      <p class="slogan">Problem ulazi. Jasan odgovor izlazi.</p>
+      <div class="card-links"><a href="/nisa/servis-racunara/">Niša stranica →</a><a href="/demo/servis-racunara/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#2256c9"></span><span class="p-accent" style="background:#ffb84d"></span></div>
+      <h3>Škola stranih jezika</h3>
+      <p class="slogan">Novi jezik, jasan plan.</p>
+      <div class="card-links"><a href="/nisa/skola-jezika/">Niša stranica →</a><a href="/demo/skola-jezika/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#176b67"></span><span class="p-accent" style="background:#89c9b8"></span></div>
+      <h3>Stomatološka ordinacija</h3>
+      <p class="slogan">Jasan upit pre dolaska.</p>
+      <div class="card-links"><a href="/nisa/stomatolog/">Niša stranica →</a><a href="/demo/stomatolog/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#7b3f67"></span><span class="p-accent" style="background:#d7b377"></span></div>
+      <h3>Svadbena i event sala</h3>
+      <p class="slogan">Vaš datum. Vaša atmosfera.</p>
+      <div class="card-links"><a href="/nisa/svadbena-sala/">Niša stranica →</a><a href="/demo/svadbena-sala/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#087ca7"></span><span class="p-accent" style="background:#67d5ea"></span></div>
+      <h3>Vodoinstalaterske usluge</h3>
+      <p class="slogan">Od kvara do jasnog termina.</p>
+      <div class="card-links"><a href="/nisa/vodoinstalater/">Niša stranica →</a><a href="/demo/vodoinstalater/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    <article class="card">
+      <div class="palette" aria-hidden="true"><span class="p-brand" style="background:#e05a2a"></span><span class="p-accent" style="background:#263b50"></span></div>
+      <h3>Vulkanizer i skladištenje guma</h3>
+      <p class="slogan">Sezona bez čekanja.</p>
+      <div class="card-links"><a href="/nisa/vulkanizer/">Niša stranica →</a><a href="/demo/vulkanizer/paket-1/" target="_blank" rel="noreferrer">Demo →</a></div>
+    </article>
+    </div>
+  </section>
+
+  <section class="kontakt">
+    <h2>Kad se prepoznate — pozovite.</h2>
+    <div class="cta-end">
+      <a class="button primary" href="/sales/">Prodajna stranica →</a>
+      <a class="button ghost" href="tel:+381637456770">Pozovite 063 745 6770</a>
+      <a class="button ghost" href="viber://chat?number=%2B381637456770">Viber</a>
+    </div>
+  </section>
+</main>
+<footer><strong>NIDZP Marketing</strong> · FIKTIVNI NIDZP DEMO - nije stvarna firma niti javna ponuda</footer>
+</body>
+</html>

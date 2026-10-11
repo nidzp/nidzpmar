@@ -6,12 +6,16 @@
   <meta name="description" content="Izaberite svoju delatnost i odmah pogledajte gotov demo sajta za vaš lokal. Sajt 600 EUR godišnje, Premium sajt sa Ninom 2.500 EUR godišnje — ista cena pri obnovi, bez naknade za izradu.">
   <meta name="demo-marker" content="NIDZP DEMO">
   <title>Sajt za vaš lokal · NIDZP — 600 € godišnje ili Premium sa Ninom 2.500 €</title>
-  <link rel="stylesheet" href="/sales/sales.css">
+  <link rel="stylesheet" href="sales.css">
 </head>
 <body class="initializing">
   <a class="skip" href="#demo">Pređite odmah na demo</a>
   <header class="topbar">
-    <a class="brand" href="/sales/" aria-label="NIDZP početna"><span>N</span> NIDZP <small>MARKETING</small></a>
+    <div class="brand-wrap">
+      <a class="brand" href="/sales/" aria-label="NIDZP početna"><span>N</span> NIDZP <small>MARKETING</small></a>
+      <a class="topbar-phone" href="tel:+381637456770"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>063 745 6770</a>
+      <a class="topbar-viber" href="viber://chat?number=%2B381637456770" aria-label="Pišite na Viberu"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Viber</a>
+    </div>
     <nav aria-label="Glavna navigacija">
       <a href="#demo">Demo</a>
       <a href="#ponuda">Paketi</a>
@@ -25,26 +29,28 @@
 
   <main>
     <section class="hero" aria-labelledby="glavni-naslov">
-      <div class="hero-copy">
-        <p class="eyebrow">SOMBOR I OKOLINA · SAJTOVI ZA LOKALNE BIZNISE</p>
-        <h1 id="glavni-naslov">Sajt koji vam<br>donosi upite.</h1>
-        <p class="lede">Izaberite svoju delatnost i odmah pogledajte kako bi izgledao vaš sajt — gotov primer, ne obećanje. Bez prijave, bez čekanja, bez pritiska.</p>
-        <div class="hero-facts" aria-label="Cene i obnova">
-          <span><strong>600 €</strong> Sajt · godišnje</span>
-          <span><strong>2.500 €</strong> Premium sa Ninom · godišnje</span>
-          <span><strong>Ista cena</strong> pri svakoj obnovi</span>
-        </div>
-        <p class="status" id="health" role="status">Provera statusa…</p>
-      </div>
+      <p class="eyebrow">SOMBOR I OKOLINA · SAJTOVI ZA LOKALNE BIZNISE</p>
+      <h1 id="glavni-naslov">Ovako bi izgledao vaš sajt.</h1>
+      <p class="lede">Izaberite svoj posao — odmah pregledate pravi, klikabilan sajt, ne maketu ni sliku. Bez prijave, bez čekanja.</p>
 
       <div class="quick-start" aria-label="Odmah pogledajte demo za svoju delatnost">
-        <div class="step-label">VAŠ SAJT ZA 20 SEKUNDI</div>
+        <div class="step-label"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>VAŠ SAJT ZA 20 SEKUNDI</div>
         <label for="niche">Koji je vaš posao?</label>
+        <div class="quick-picks" role="group" aria-label="Najčešće delatnosti — brzi izbor">
+          <span class="quick-picks-label">Najčešći:</span>
+          <button type="button" class="pick" data-pick="restoran">Restoran</button>
+          <button type="button" class="pick" data-pick="kafic">Kafić</button>
+          <button type="button" class="pick" data-pick="pekara">Pekara</button>
+          <button type="button" class="pick" data-pick="auto-servis">Auto-servis</button>
+          <button type="button" class="pick" data-pick="frizer">Frizer</button>
+          <button type="button" class="pick" data-pick="stomatolog">Stomatolog</button>
+        </div>
         <select id="niche">
           <option value="restoran">Restoran / picerija</option>
           <option value="kafic">Kafić</option>
           <option value="pekara">Pekara</option>
           <option value="auto-servis">Auto-servis</option>
+          <option value="tehnicki-pregled">Tehnički pregled (srodni demo auto-servisa)</option>
           <option value="frizer">Frizerski / beauty salon</option>
           <option value="pet-grooming">Pet grooming</option>
           <option value="namestaj">Nameštaj</option>
@@ -72,10 +78,18 @@
           <option value="vodoinstalater">Vodoinstalater</option>
           <option value="rent-a-car">Rent a car</option>
         </select>
-        <a class="button primary" data-demo="restoran" href="#demo">Pogledajte demo svog sajta ↓</a>
-        <a class="button ghost" data-demo="restoran" data-premium="true" href="#demo">Uporedite sa Premiumom ↓</a>
+        <a class="button primary" data-demo="restoran" href="#demo">Pogledajte svoj demo ↓</a>
         <p>Otvoren demo. Bez prijave. Bez obaveze.</p>
       </div>
+      <div class="price-block">
+        <div class="hero-facts" aria-label="Cene i obnova">
+          <span><strong>600 €</strong> Sajt · godišnje</span>
+          <span><strong>2.500 €</strong> Premium sa Ninom · godišnje</span>
+          <span><strong>Ista cena</strong> pri svakoj obnovi</span>
+        </div>
+        <p class="price-note">Cene su javne. Bez skrivenih troškova.</p>
+      </div>
+      <p class="hero-trust">Demo je fiktivan i jasno označen. Vaš sajt pravimo od vaših odobrenih podataka.</p>
     </section>
 
     <section id="demo" class="demo-section">
@@ -91,24 +105,30 @@
         <div class="frame-bar">
           <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
           <span id="frame-label">Sajt · Paket 1</span>
-          <div>
+          <div class="frame-actions">
+            <button id="copy-link" class="frame-btn" type="button" title="Kopiraj link na ovaj demo"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>Kopiraj link</span></button>
+            <div class="device-toggle" role="group" aria-label="Prikaz uređaja">
+              <button id="device-desktop" class="device-btn" type="button" aria-pressed="true" title="Prikaz za računar" aria-label="Prikaz za računar"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span>Računar</span></button>
+              <button id="device-phone" class="device-btn" type="button" aria-pressed="false" title="Prikaz za telefon" aria-label="Prikaz za telefon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg><span>Telefon</span></button>
+            </div>
             <button id="p1" class="tab active" type="button">Sajt · 600 €</button>
             <button id="p2" class="tab" type="button">Premium + Nina · 2.500 €</button>
             <a id="frame-full" class="frame-full" href="/demo/restoran/paket-1/" target="_blank" rel="noreferrer">Ceo pregled ↗</a>
           </div>
         </div>
+        <div class="phone-notch" aria-hidden="true"></div>
         <iframe id="demo-frame" title="NIDZP DEMO pregled izabranog lokalnog sajta" src="about:blank"></iframe>
       </div>
-      <p class="demo-note">FIKTIVNI NIDZP DEMO — sintetički primer, nije stvarna firma niti javna ponuda. Vaš sajt pravimo od vaših odobrenih podataka.</p>
+      <p class="demo-note">FIKTIVNI NIDZP DEMO — sintetički primer, nije stvarna firma niti javna ponuda. <span id="demo-note-niche"></span></p>
     </section>
 
-    <section class="steps" aria-label="Kako funkcioniše">
-      <article><span>01</span><h3>Izaberite delatnost</h3><p>Otvorite demo koji liči na vaš posao — ima ih 30, od restorana do vulkanizera.</p></article>
-      <article><span>02</span><h3>Uporedite pakete</h3><p>Sajt za jasno predstavljanje ili Premium sa Ninom koja odgovara posetiocima. Ista cena pri obnovi.</p></article>
-      <article><span>03</span><h3>Javite nam se</h3><p>Pozovite ili pišite. Dogovaramo sve u jednom razgovoru — bez forme, bez čekanja na ponudu.</p></article>
+    <section class="steps reveal" aria-label="Kako funkcioniše">
+      <article><span>01</span><svg class="icon step-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><h3>Izaberite svoj posao</h3><p>30 delatnosti, od restorana do vulkanizera. Demo se otvara odmah — bez prijave.</p></article>
+      <article><span>02</span><svg class="icon step-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><h3>Pogledajte svoj sajt</h3><p>Pravi, klikabilan sajt, ne maketa. Prebacite na Premium da vidite razliku koju pravi Nina.</p></article>
+      <article><span>03</span><svg class="icon step-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><h3>Pozovite kad se prepoznate</h3><p>063 745 6770 — jedan razgovor, jasna ponuda, vi odlučujete. Bez forme i čekanja.</p></article>
     </section>
 
-    <section id="ponuda" class="offers-section">
+    <section id="ponuda" class="offers-section reveal">
       <div class="section-intro">
         <p class="eyebrow">DVA PAKETA · JASNE CENE</p>
         <h2>Koliko snažno želite da nastupite?</h2>
@@ -120,11 +140,11 @@
           <h3><span data-price="site">600</span> <small>EUR / godišnje</small></h3>
           <p>Sve što kupac treba da vas nađe, razume i pozove — na mobilnom i računaru.</p>
           <ul>
-            <li>Ponuda, galerija i kontakt na jednom mestu</li>
-            <li>Mobilni i desktop prikaz</li>
-            <li>Jedan jasan poziv na akciju: poziv ili poruka</li>
-            <li>Održavanje i popravke bagova</li>
-            <li>Ista cena pri obnovi</li>
+            <li>Mušterije vas nađu na Google-u — adresa, telefon, radno vreme i ponuda na jednom mestu.</li>
+            <li>Sajt radi na telefonu i računaru — gde vas danas i traže.</li>
+            <li>Jedan vidan poziv na akciju: poziv ili poruka, bez lavirinta menija.</li>
+            <li>Popravke bagova i održavanje su u godišnjoj ceni — ne plaća se svaka sitna popravka posebno.</li>
+            <li>Obnova po ISTOJ ceni: 600 EUR godišnje, svake godine. Bez naknade za izradu.</li>
           </ul>
           <a class="button ghost" data-demo="restoran" href="#demo">Pogledajte Sajt demo</a>
         </article>
@@ -134,12 +154,11 @@
           <h3><span data-price="premium">2.500</span> <small>EUR / godišnje</small></h3>
           <p>Kada želite više stranica, razgovor sa posetiocima i kontrolu sadržaja pre objave.</p>
           <ul>
-            <li>Sve iz paketa Sajt</li>
-            <li>Više stranica po meri vaše delatnosti</li>
-            <li>Nina — AI asistentkinja koja odgovara posetiocima</li>
-            <li>Vi pregledate i odobravate sadržaj pre objave</li>
-            <li>Temeljno testiranje + jedna runda izmena</li>
-            <li>Ista cena pri obnovi</li>
+            <li>Sve iz paketa Sajt — plus više stranica po meri vaše delatnosti.</li>
+            <li>Nina — AI asistentkinja koja odgovara mušterijama dok vi radite. Javno kaže da je AI i odgovara samo iz podataka koje vi odobrite.</li>
+            <li>Vi pregledate i odobravate sadržaj pre objave — ništa ne izlazi na sajt bez vas.</li>
+            <li>Temeljno testiranje na telefonu i računaru + jedna runda izmena uključena.</li>
+            <li>Ista cena pri obnovi: 2.500 EUR godišnje.</li>
           </ul>
           <a class="button light" data-demo="restoran" data-premium="true" href="#demo">Pogledajte Premium demo</a>
         </article>
@@ -150,7 +169,21 @@
       </div>
     </section>
 
-    <section class="comparison" aria-labelledby="razlika-naslov">
+    <section id="o-nama" class="about-section reveal" aria-labelledby="o-nama-naslov">
+      <div class="section-intro">
+        <p class="eyebrow">KO STOJI IZA OVOGA</p>
+        <h2 id="o-nama-naslov">Bez fine fonetike — ovako radi ovo.</h2>
+      </div>
+      <ul class="about-list">
+        <li>NIDZP AI Marketing — mali lokalni tim iz Sombora i okoline. Telefon: 063 745 6770 — javljamo se mi, ne call-centar.</li>
+        <li>Cene pišemo javno: Sajt 600 EUR godišnje, Premium sa Ninom 2.500 EUR godišnje. Ista cena pri obnovi. Bez naknade za izradu. Bez skrivenih troškova.</li>
+        <li>Obim pišemo unapred: jedna lokacija, jedan jezik, do 30 stavki, jedan glavni poziv na akciju. Šta nije u paketu — piše otvoreno ispod ponude.</li>
+        <li>Demo sajtovi su fiktivni i jasno označeni — ne pretvaramo se da su klijenti. Vaš sajt pravimo od vaših odobrenih podataka.</li>
+        <li>Nina je veštačka inteligencija i to javno kaže. Ne izmišlja podatke i ne potvrđuje rezervacije umesto vas.</li>
+      </ul>
+    </section>
+
+    <section class="comparison reveal" aria-labelledby="razlika-naslov">
       <div class="section-intro">
         <p class="eyebrow">ŠTA TAČNO RAZLIKUJE PAKETE</p>
         <h2 id="razlika-naslov">Razlika se oseća u svakom koraku posetioca.</h2>
@@ -165,10 +198,10 @@
       </div>
     </section>
 
-    <section id="nina" class="nina-preview">
+    <section id="nina" class="nina-preview reveal">
       <div>
         <p class="eyebrow">NINA · VAŠA AI ASISTENTKINJA</p>
-        <h2>Nina odgovara dok vi radite.</h2>
+        <h2><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Nina odgovara dok vi radite.</h2>
         <p id="nina-mode">Nina je deo Premium paketa. Posetiocu odgovara na pitanja o ponudi, uslugama i radnom vremenu — samo iz podataka koje vi odobrite.</p>
         <ul class="nina-list">
           <li>Odgovara iz vaših odobrenih podataka</li>
@@ -190,6 +223,29 @@
         <a id="nina-full" class="button primary" href="/demo/restoran/paket-2/nina/" target="_blank" rel="noreferrer">Otvorite Nina stranicu ↗</a>
         <button id="guide-open" type="button">Kako da pregledam demo?</button>
       </div>
+      <div class="public-nina-card">
+        <div class="public-nina-head">
+          <span class="eyebrow">DEMO RAZGOVOR · JAVNO</span>
+          <h3>Nina odgovara direktno ovde.</h3>
+          <button id="public-nina-open" class="button primary" type="button" aria-expanded="false" aria-controls="public-nina">Pitajte Ninu sada — demo</button>
+        </div>
+        <div id="public-nina" hidden>
+          <p id="public-nina-brandline" class="public-brandline" role="status" hidden></p>
+          <div id="public-nina-log" class="public-log" aria-live="polite"></div>
+          <p id="public-nina-typing" class="typing" role="status" hidden><span class="sr-only">Nina priprema odgovor…</span><span class="t-dots" aria-hidden="true"><span></span><span></span><span></span></span></p>
+          <form id="public-nina-form">
+            <label class="sr-only" for="public-nina-question">Vaše pitanje za Ninu</label>
+            <textarea id="public-nina-question" maxlength="500" rows="2" placeholder="Pitajte Ninu nešto o ponudi izabrane delatnosti…"></textarea>
+            <button id="public-nina-send" class="button primary" type="submit">Pošalji</button>
+          </form>
+          <div class="public-nina-meta">
+            <p id="public-nina-ostalo" class="public-ostalo" role="status">Preostalo poruka: 10/10</p>
+            <button id="public-nina-retry" class="button ghost" type="button" hidden>Pokušaj ponovo</button>
+          </div>
+          <p id="public-nina-status" class="public-status" role="status" hidden></p>
+          <p class="public-disclaimer">Nina je AI i odgovara iz fiktivne demo baze izabrane niše (<span id="public-nina-niche">Restoran / picerija</span> — menja se gore). Ne zakazuje i ne naručuje. Limit: 10 poruka po sesiji.</p>
+        </div>
+      </div>
     </section>
 
     <p id="action-status" class="scope" role="status"></p>
@@ -203,7 +259,9 @@
         <textarea id="live-question" maxlength="1000" required rows="3" placeholder="Koju uslugu biste mi preporučili?"></textarea>
         <button id="live-send" class="button primary" type="submit">Pitajte Ninu →</button>
       </form>
+      <p id="live-typing" class="typing" role="status" hidden><span class="sr-only">Nina priprema odgovor…</span><span class="t-dots" aria-hidden="true"><span></span><span></span><span></span></span></p>
       <p id="live-answer" class="answer" role="status"></p>
+      <button id="live-retry" class="button ghost" type="button" hidden>Pokušaj ponovo</button>
     </section>
 
     <section id="admin-panel" class="live-panel" hidden>
@@ -217,11 +275,15 @@
       <p id="admin-status" role="status"></p>
     </section>
 
-    <section id="faq" class="faq">
+    <section id="faq" class="faq reveal">
       <div class="section-intro">
         <p class="eyebrow">ČESTA PITANJA VLASNIKA</p>
         <h2>Šta vas zanima — bez fine fonetike.</h2>
       </div>
+      <details><summary>Već imam Instagram/Facebook stranicu — čemu sajt?</summary><p>Društvene mreže su odlične za objave — ali profil nije vaš: adresa, algoritam i pravila su tuđi. Sajt je vaša adresa na Google-u, gde vas traže ljudi koji vas još ne znaju.</p></details>
+      <details><summary>Nemam vremena za ovo.</summary><p>Izaberete delatnost i odmah vidite demo — bez sastanka i bez tehničkih termina. Ako se prepoznate, pozovete; ostalo radimo mi.</p></details>
+      <details><summary>Ko će ovo da održava?</summary><p>Sadržaj se menja na jednom mestu — meni, cene, radno vreme — a godišnji ciklus uključuje popravke bagova. Vi ne dirate tehniku.</p></details>
+      <details><summary>Rođak mi je pravio sajt za džabe.</summary><p>Besplatno obično znači: bez podrške kad sajt stane i bez ko da ažurira cene i radno vreme. Kod nas je podrška deo godišnje cene — i ista je i sledeće godine.</p></details>
       <details><summary>Da li zaista ne plaćam izradu posebno?</summary><p>Ne. Izrada je uključena u godišnju cenu oba paketa. Plaćate 600 € za Sajt ili 2.500 € za Premium — godišnje, i to je to.</p></details>
       <details><summary>Da li cena raste pri obnovi?</summary><p>Ne. Obnavljate po istoj ceni koju ste potpisali: 600 € za Sajt, 2.500 € za Premium.</p></details>
       <details><summary>Šta je Nina?</summary><p>AI asistentkinja na vašem sajtu, deo Premium paketa. Posetiocima odgovara na pitanja iz podataka koje vi odobrite i nikad ne potvrđuje rezervaciju, porudžbinu ili kupovinu umesto vas. Probajte je na demo sajtu.</p></details>
@@ -231,27 +293,39 @@
       <details><summary>Da li su sajtovi u demo pregledu stvarni lokali?</summary><p>Ne. Svih 30 demo sajtova su fiktivni i jasno označeni. Vaš sajt pravimo isključivo od podataka koje vi odobrite.</p></details>
     </section>
 
-    <section id="kontakt" class="contact">
+    <section id="kontakt" class="contact reveal">
       <p class="eyebrow">SLEDEĆI KORAK</p>
       <h2>Razgovarajmo o vašem lokalu.</h2>
-      <p>Recite nam ko ste i šta prodajete. Kratko pričamo, predložimo šta ima smisla, a vi odlučujete.</p>
+      <p>Kratko pričamo, predložimo šta ima smisla, vi odlučujete. Telefon i Viber su javni — javljamo se mi, ne call-centar.</p>
       <div class="contact-actions">
-        <a class="button primary" href="tel:+381637456770">Pozovite 063 745 6770</a>
-        <a class="button ghost" href="mailto:nidzpaimarketing@gmail.com?subject=Razgovarajmo%20o%20mom%20lokalu">Pišite nam</a>
+        <a class="button primary" href="tel:+381637456770"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Pozovite 063 745 6770</a>
+        <a class="button ghost" href="viber://chat?number=%2B381637456770" aria-label="Pišite na Viberu"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>Pišite na Viberu</a>
       </div>
+      <a class="contact-mail" href="mailto:nidzpaimarketing@gmail.com?subject=Razgovarajmo%20o%20mom%20lokalu">nidzpaimarketing@gmail.com</a>
     </section>
   </main>
 
   <dialog id="guide-dialog" class="guide-dialog">
     <p class="eyebrow">20 SEKUNDI DO RAZLIKE</p>
     <h2>Delatnost. Paket. Iskustvo.</h2>
-    <p>Izbor na vrhu menja demo. Traka prebacuje Sajt i Premium. „Ceo pregled“ otvara sve stranice demo sajta.</p>
-    <p>Vizuelne komande menjaju samo ovaj pregled. Ništa se ne objavljuje.</p>
-    <button id="guide-close" class="button primary" type="button">Razumem</button>
+    <div class="guide-steps" aria-live="polite">
+      <p class="guide-step is-active">Izaberite delatnost — demo se otvara ispod.</p>
+      <p class="guide-step">Traka prebacuje Sajt (600 €) i Premium sa Ninom (2.500 €).</p>
+      <p class="guide-step">Cene su javne — ista cena pri obnovi. Kad se prepoznate, pozovite 063 745 6770.</p>
+    </div>
+    <div class="guide-nav">
+      <button id="guide-back" class="button ghost" type="button">Nazad</button>
+      <div class="guide-dots" aria-label="Izbor koraka ture">
+        <button class="guide-dot is-active" type="button" aria-label="Korak 1 od 3" aria-pressed="true"></button>
+        <button class="guide-dot" type="button" aria-label="Korak 2 od 3" aria-pressed="false"></button>
+        <button class="guide-dot" type="button" aria-label="Korak 3 od 3" aria-pressed="false"></button>
+      </div>
+      <button id="guide-next" class="button primary" type="button">Dalje</button>
+    </div>
   </dialog>
 
   <aside id="privacy-banner" class="privacy-banner" aria-labelledby="privacy-title" hidden>
-    <div class="privacy-icon" aria-hidden="true">◎</div>
+    <div class="privacy-icon" aria-hidden="true"><svg class="icon" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
     <div>
       <span>PRIVATNOST, JASNO</span>
       <h2 id="privacy-title">Samo neophodno.</h2>
@@ -270,7 +344,7 @@
     <div class="privacy-list">
       <article><span>UVEK AKTIVNO</span><h3>Neophodna sesija</h3><p>Potpisani, HttpOnly cookie koristi se samo posle dobrovoljne prijave za živu Ninu i ističe najkasnije za 8 sati.</p></article>
       <article><span>LOKALNO</span><h3>Demo podešavanja</h3><p>Izbor niše i radni nacrti ostaju samo u ovom pregledaču. Ne šalju se trećim stranama.</p></article>
-      <article><span>ISKLJUČENO</span><h3>Analitika i marketing</h3><p>Ovaj pregled ne postavlja analitičke, oglasne ni cross-site tracking kolačiće.</p></article>
+      <article><span>ISKLJUČENO</span><h3>Analitika i marketing</h3><p>Ovaj pregled ne postavlja analitičke, oglasne ni cross-site tracking kolačiće. Broji se samo anoniman broj prikaza i klikova — bez ličnih podataka i bez kolačića.</p></article>
     </div>
     <button id="privacy-save" class="privacy-primary" type="button">Sačuvaj i zatvori</button>
   </dialog>
@@ -290,11 +364,16 @@
     </form>
   </div>
 
-  <a class="sticky-contact" href="mailto:nidzpaimarketing@gmail.com?subject=Razgovarajmo%20o%20mom%20lokalu">Razgovarajmo o vašem lokalu <span>063 745 6770</span></a>
+  <div class="sticky-contact">
+    <a class="sticky-primary" href="tel:+381637456770">Pozovite 063 745 6770</a>
+    <a class="sticky-viber" href="viber://chat?number=%2B381637456770" aria-label="Pišite na Viberu">Viber</a>
+  </div>
   <footer>
     <div><strong>NIDZP Marketing</strong><br><a href="mailto:nidzpaimarketing@gmail.com?subject=Razgovarajmo%20o%20mom%20lokalu">nidzpaimarketing@gmail.com</a> · <a href="tel:+381637456770">063 745 6770</a></div>
-    <div><button id="privacy-open" class="footer-privacy" type="button">Podešavanja privatnosti</button><br>FIKTIVNI NIDZP DEMO - nije stvarna firma niti javna ponuda</div>
+    <div><button id="privacy-open" class="footer-privacy" type="button">Podešavanja privatnosti</button><br>FIKTIVNI NIDZP DEMO - nije stvarna firma niti javna ponuda
+      <p class="status footer-health" id="health" role="status">Provera statusa…</p>
+    </div>
   </footer>
-  <script src="/sales/sales.js" defer></script>
+  <script src="sales.js" defer></script>
 </body>
 </html>

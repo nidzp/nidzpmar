@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gotov demo sajta za Električarske usluge — pravi, klikabilan sajt, ne maketa. Sajt 600 EUR godišnje, Premium sa Ninom 2.500 EUR godišnje, ista cena pri obnovi.">
+  <meta name="demo-marker" content="NIDZP DEMO">
+  <title>Sajt za Električarske usluge · NIDZP — 600 € godišnje ili Premium 2.500 €</title>
+  <style>
+:root{--paper:#fff;--ink:#141414;--muted:#595959;--soft:#8a8a8a;--line:#e3e3e3;--panel:#f5f5f4;--max:1080px;--brand:#d39a00;--brand-ink:#ffffff;--accent:#2d4f72;--accent-ink:#ffffff}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.topbar{width:min(var(--max),100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 1.5rem;border-bottom:2px solid var(--accent)}
+.brand{display:inline-flex;align-items:center;font-weight:900;letter-spacing:.12em;text-decoration:none;white-space:nowrap}
+.brand span{display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;margin-right:.55rem;border-radius:50%;background:var(--brand);color:var(--brand-ink)}
+.brand small{color:var(--soft);font-size:.55rem;letter-spacing:.14em;font-weight:700}
+.topbar .tel{font-weight:800;text-decoration:none;white-space:nowrap}
+.topbar .tel:hover{color:var(--accent)}
+main>section{width:min(var(--max),100%);margin:auto;padding:2rem 1.5rem}
+.eyebrow{color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;margin:0 0 .5rem}
+h1{font-size:clamp(1.9rem,4.5vw,2.9rem);line-height:1.08;margin:.2rem 0 1rem;max-width:24ch}
+h2{font-size:clamp(1.35rem,3vw,1.8rem);margin:0 0 1rem}
+.lede{color:var(--muted);font-size:1.05rem;max-width:54ch;margin:0 0 1.4rem}
+.price-strip{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;align-items:baseline;padding:.9rem 1.1rem;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:.95rem}
+.price-strip strong{font-size:1.04rem}
+.palette{display:flex;height:10px;max-width:340px;border-radius:999px;overflow:hidden;margin-top:1.2rem}
+.p-brand{flex:1;background:var(--brand)}
+.p-accent{flex:1;background:var(--accent)}
+.demo-frame{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+.demo-frame iframe{display:block;width:100%;height:min(72vh,640px);border:0;background:#fff}
+.demo-note{color:var(--soft);font-size:.82rem;margin:.7rem 0 1.2rem}
+.frame-links,.contact-actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.button{display:inline-block;padding:.75rem 1.15rem;border-radius:9px;text-decoration:none;font-weight:800;border:1px solid transparent}
+.button.primary{background:var(--accent);color:var(--accent-ink)}
+.button.primary:hover{filter:brightness(.95)}
+.button.ghost{border-color:var(--ink);background:#fff;color:var(--ink)}
+.button.ghost:hover{background:var(--panel)}
+.packs{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.packs article{border:1px solid var(--line);border-radius:12px;padding:1.15rem;background:#fff}
+.packs h3{margin:.1rem 0 .7rem;font-size:1.05rem}
+.packs ul{margin:0;padding-left:1.15rem;color:var(--muted)}
+.packs li{margin:.45rem 0}
+.faq details{border:1px solid var(--line);border-radius:10px;background:#fff;padding:.9rem 1.1rem;margin:.6rem 0}
+.faq summary{font-weight:700;cursor:pointer}
+.faq p{color:var(--muted);margin:.6rem 0 0}
+.kontakt p{color:var(--muted);max-width:56ch}
+.nazad{display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1.5rem}
+.nazad a{color:var(--muted);font-weight:700;text-decoration:none;border-bottom:1px solid var(--line)}
+.nazad a:hover{color:var(--ink);border-color:var(--ink)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{display:flex;flex-direction:column;gap:.55rem;border:1px solid var(--line);border-radius:12px;padding:1.05rem;background:#fff}
+.card .palette{margin:0 0 .25rem;max-width:none}
+.card h3{margin:0;font-size:1.02rem;line-height:1.3}
+.card .slogan{color:var(--muted);font-size:.92rem;margin:0;flex:1}
+.card-links{display:flex;justify-content:space-between;gap:.6rem;margin-top:.35rem}
+.card-links a{font-weight:800;font-size:.9rem;text-decoration:none;border-bottom:1px solid var(--ink)}
+.card-links a:hover{color:var(--accent)}
+.cta-end{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+footer{border-top:1px solid var(--line);margin-top:2.2rem;padding:1.4rem 1.5rem;text-align:center;color:var(--muted);font-size:.85rem}
+footer strong{color:var(--ink)}
+@media (max-width:560px){.topbar{padding:.7rem 1rem}main>section{padding:1.5rem 1rem}h1{max-width:none}}
+  </style>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/nisa/"><span aria-hidden="true">N</span>NIDZP <small>MARKETING</small></a><a class="tel" href="tel:+381637456770">063 745 6770</a></header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">SOMBOR I OKOLINA · DEMO ZA: Električarske usluge</p>
+    <h1>Ovako bi izgledao sajt vaše električarske radnje.</h1>
+    <p class="lede">Gotov demo sajta za Električarske usluge — pravi, klikabilan sajt, ne maketa. Bez prijave, bez čekanja.</p>
+    <div class="price-strip" aria-label="Cene i obnova">
+      <span><strong>600 EUR</strong> Sajt · godišnje</span>
+      <span><strong>2.500 EUR</strong> Premium sa Ninom · godišnje</span>
+      <span><strong>Ista cena</strong> pri obnovi</span>
+    </div>
+    <div class="palette" aria-hidden="true"><span class="p-brand"></span><span class="p-accent"></span></div>
+  </section>
+
+  <section class="demo">
+    <h2>Uživo demo — kliknite kroz sajt</h2>
+    <div class="demo-frame"><iframe src="/demo/elektricar/paket-1/" title="NIDZP DEMO — uživo sajt: Volt 025 NIDZP DEMO" loading="lazy"></iframe></div>
+    <p class="demo-note">FIKTIVNI NIDZP DEMO — sintetički primer, nije stvarna firma niti javna ponuda.</p>
+    <div class="frame-links">
+      <a class="button primary" href="/demo/elektricar/paket-2/" target="_blank" rel="noreferrer">Otvorite Premium demo ↗</a>
+      <a class="button ghost" href="/demo/elektricar/paket-2/nina/" target="_blank" rel="noreferrer">Pitajte Ninu ↗</a>
+    </div>
+  </section>
+
+  <section class="dobijate">
+    <h2>Šta dobijate</h2>
+    <div class="packs">
+      <article>
+        <h3>Sajt · 600 EUR godišnje</h3>
+        <ul><li>Mušterije vas nađu na Google-u — adresa, telefon, radno vreme i ponuda na jednom mestu.</li><li>Sajt radi na telefonu i računaru — gde vas danas i traže.</li><li>Jedan vidan poziv na akciju: poziv ili poruka, bez lavirinta menija.</li><li>Popravke bagova i održavanje su u godišnjoj ceni — ne plaća se svaka sitna popravka posebno.</li><li>Obnova po ISTOJ ceni: 600 EUR godišnje, svake godine. Bez naknade za izradu.</li></ul>
+      </article>
+      <article>
+        <h3>Premium sa Ninom · 2.500 EUR godišnje</h3>
+        <ul><li>Sve iz paketa Sajt — plus više stranica po meri vaše delatnosti.</li><li>Nina — AI asistentkinja koja odgovara mušterijama dok vi radite. Javno kaže da je AI i odgovara samo iz podataka koje vi odobrite.</li><li>Vi pregledate i odobravate sadržaj pre objave — ništa ne izlazi na sajt bez vas.</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Česta pitanja</h2>
+    <details><summary>Da li zaista ne plaćam izradu posebno?</summary><p>Ne. Izrada je uključena u godišnju cenu oba paketa. Plaćate 600 € za Sajt ili 2500 € za Premium — godišnje, i to je to.</p></details>
+    <details><summary>Da li cena raste pri obnovi?</summary><p>Ne. Obnavljate po istoj ceni koju ste potpisali: 600 € za Sajt, 2500 € za Premium.</p></details>
+    <details><summary>Da li je ovaj demo stvarna firma?</summary><p>Ne. Svih 30 demo sajtova su fiktivni i jasno označeni. Vaš sajt pravimo isključivo od podataka koje vi odobrite.</p></details>
+  </section>
+
+  <section class="kontakt">
+    <h2>Kontakt</h2>
+    <p>Kratko pričamo, predložimo šta ima smisla, vi odlučujete. Telefon i Viber su javni — javljamo se mi, ne call-centar.</p>
+    <div class="contact-actions">
+      <a class="button primary" href="tel:+381637456770">Pozovite 063 745 6770</a>
+      <a class="button ghost" href="viber://chat?number=%2B381637456770">Viber</a>
+    </div>
+    <nav class="nazad" aria-label="Navigacija nazad">
+      <a href="/nisa/">← Sve niše</a>
+      <a href="/sales/">Prodajna stranica</a>
+    </nav>
+  </section>
+</main>
+<footer><strong>NIDZP Marketing</strong> · FIKTIVNI NIDZP DEMO - nije stvarna firma niti javna ponuda</footer>
+</body>
+</html>
